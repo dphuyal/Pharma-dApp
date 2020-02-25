@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Patient Interface</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+    <body>
+      <div id="header_body_div">
+          <header>
+              <!--Header Call-->
+              <script src="header.js"></script>
+          </header>
+      </div>
+        <div id = "form-body">
+        <form class='medical-prescription-header'>
+          <h1>View Your Medical Prescription</h1>
+          <p><em>Note:</em> You need your valid <strong>patient ID</strong> to see all your medical prescriptions.</p>
+        </form>
+      </div>
+      <form class='prescription-form' id="prescription_form">
+          <div class='form-row'>
+              <label for='patient-id'>Patient Id</label>
+                <input id='patient-id' name='patient-id' type='number' placeholder="12345"/>
+            </div>
+        <div class='form-row'>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      
+
+      <script src="web3.js"></script>
+      <script src="index.js"></script>
+      <!--Bootstrap scripts call for navigation toggle button during use on phone-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+      <div id="footer">
+        <p>© 2019 Deep Phuyal all rights reserved</p>
+      </div> 
+
+    </body>
+
+</html>

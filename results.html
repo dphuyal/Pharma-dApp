@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Prescription Analysis Interface</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+
+    <body>
+        <div id="header_body_div">
+            <header>
+                <!--Header Call-->
+                <script src="header.js"></script>
+            </header>
+        <div id = "form-body">
+        <form class='medical-prescription-header'>
+            <h1>Prescription Analysis </h1>
+            <p><em>Note:</em> This interface is to analyze what brand of medicine is prescribed the most by the doctor in a state.</p>
+        </form>
+        </div>
+        <form  id="resultform_form">
+            <div class='form-row'>
+                <label for='license-state'>Doctor License State</label>
+                <input id='research-state' name='license-state' type='text' placeholder="MS or TN"/>
+            </div>
+            <div class='form-row'>
+                <button type="submit" id="myBtn">Submit</button>
+            </div>
+            <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h3 id="display_msg"></h3>
+                    </div>
+                  
+                  </div>
+        </form>
+  
+    <script src="web3.js"></script>
+    <script src="index.js"></script>
+    <!--Bootstrap scripts call for navigation toggle button during use on phone-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <div id="footer">
+        <p>© 2019 Deep Phuyal all rights reserved</p>
+    </div>
+    <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Medical Prescription</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+  <body>
+    <!--This div is created only to set footer at the bootom of page-->
+    <div id="header_body_div">
+      <header>
+          <!--Header Call-->
+          <script src="header.js"></script>
+      </header>
+    </div>
+    <div id = "form-body">
+    <div class='medical-prescription-header'>
+      <h1>Medical Prescription</h1>
+      <p><em>Disclaimer:</em> Only to be filled out by a valid <strong>Medical Practitioner.</strong></p>
+    </div>
+
+    <form class='prescription-form' id="prescription_form">
+      <div class='form-row'>
+        <label for='license-num'>Doctor License Number</label>
+          <input id='license-num' name='license-num' type='number'/>
+      </div>
+      <div class='form-row'>
+        <label for='license-state'>Doctor License State</label>
+          <input id='license-state' name='license-state' type='text'/>
+      </div>
+      <div class='form-row'>
+        <label for='patient-id'>Patient Id</label>
+          <input id='patient-id' name='patient-id' type='number' placeholder="12345"/>
+      </div>
+      <div class='form-row'>
+        <label for='drug-name'>Drug Name</label>
+          <input id='drug-name' name='drug-name' type='text' placeholder='Amoxicillin'/>
+      </div>
+      <div class='form-row'>
+        <label for='brand-name'>Brand Name</label>
+          <input id='brand-name' name='brand-name' type='text' placeholder='Amoxil'/>
+      </div>
+      <div class='form-row'>
+        <label for='dosage'>Dosage (in mg or ml)</label>
+          <input id='dosage' name='dosage' type='text' placeholder='250 mg'/>
+      </div>
+      <div class='form-row'>
+        <label for='num-pills'>Number of Pills</label>
+          <input id='num-pills' name='num-pills' type='number' min="1" max="5"/>
+      </div>
+      <div class='form-row'>
+        <label for='date-filled'>Date Filled</label>
+          <input id='date-filled' name='date-filled' type='date'/>
+      </div>
+      <div class='form-row'>
+        <label for='expiry-date'>Expiration Date</label>
+          <input id='expiry-date' name='expiry-date' type='date'/>
+      </div>
+      <div class='form-row'>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  </div>
+    <script src="web3.js"></script>
+    <script src="index.js"></script>
+    <!--Bootstrap scripts call for navigation toggle button during use on phone-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <div id="footer">
+      <p>© 2019 Deep Phuyal all rights reserved</p>
+   </div> 
+  </body>
+</html>
